@@ -19,9 +19,10 @@ def extract_pdf(file_path: Optional[str] = None):
     function to perform real extraction.
     """
     logging.info("Starting PDF extraction")
-
-    os.remove("sample.json")
-
+    try:
+        os.remove("sample.json")
+    except:
+        pass
     extract()
 
     logging.info("PDF extraction completed")
