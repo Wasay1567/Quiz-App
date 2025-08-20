@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 
-const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:8000'
+const API_BASE = import.meta.env.VITE_API_BASE || 'https://radical-sigrid-okaymisba-4fed5e3d.koyeb.app'
 
 function Quiz({ count, startPage, endPage, onRetake }) {
   const [loading, setLoading] = useState(true)
